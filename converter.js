@@ -41,5 +41,14 @@ function determineConverter () {
 	var fAnswer = toCelsius(fTemp);
 	document.getElementById("answer").innerHTML = "<p>" + fAnswer + "</p>";
 	}
+	if (fAnswer > 90 || cAnswer > 32) {
+		answer.className = "red";
+	}
+	else if (fAnswer < 32 || cAnswer < 0) {
+		answer.className = "blue";
+	}
+	else {
+		answer.className = "green";
+	}
 }
 
