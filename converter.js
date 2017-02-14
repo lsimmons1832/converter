@@ -34,12 +34,12 @@ function determineConverter () {
 	if (document.getElementById("celsius").checked) {
 	var cTemp = document.getElementById("userInput").value;
 	var cAnswer = toFahrenheit(cTemp);
-	document.getElementById("answer").innerHTML = "<p>" + cAnswer + "</p>";
+	document.getElementById("answer").value = cAnswer;
 	}
 	else if (document.getElementById("fahrenheit").checked) {
 	var fTemp = document.getElementById("userInput").value;
 	var fAnswer = toCelsius(fTemp);
-	document.getElementById("answer").innerHTML = "<p>" + fAnswer + "</p>";
+	document.getElementById("answer").value = fAnswer;
 	}
 	if (fAnswer > 90 || cAnswer > 32) {
 		answer.className = "red";
