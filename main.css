@@ -9,3 +9,22 @@
 .blue {
 	color: blue;
 }
+
+button {
+    background-color: steelgray; /* Green */
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.main {
+	padding: 5px;
+}
+
+.answer {
+	padding: 5px;
+}
